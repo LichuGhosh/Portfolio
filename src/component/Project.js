@@ -57,6 +57,11 @@ export default function Project() {
       title: 'EV Market Segment Analysis',
       link: 'https://github.com/LichuGhosh/EV_Market_Segment_Analysis',
       description: 'Analyzed state-wise EV adoption and charging station distribution in India.'
+    },
+    {
+      title: 'MoodTune: Smart Music Recommendations from Your Mood',
+      link: 'https://github.com/LichuGhosh/MoodTune',
+      description: 'Emotionally intelligent web app recommending music from mood-extracted text using NLP, deep learning & LLMs.'
     }
   ];
 
@@ -66,7 +71,13 @@ export default function Project() {
         <h2 className="text-4xl font-bold text-cyan-400 mb-8">Projects</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((proj, idx) => (
-            <a key={idx} href={proj.link} target="_blank" rel="noopener noreferrer" className="block bg-gray-800 p-6 rounded-lg shadow hover:shadow-cyan-500 transition">
+            <a
+              key={idx}
+              href={proj.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-gray-800 p-6 rounded-lg shadow hover:shadow-cyan-500 transition"
+            >
               <h3 className="text-xl font-bold mb-2 text-cyan-300">{proj.title}</h3>
               <p>{proj.description}</p>
             </a>
@@ -76,4 +87,5 @@ export default function Project() {
     </section>
   );
 }
+
 
